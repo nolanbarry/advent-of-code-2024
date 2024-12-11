@@ -4,9 +4,7 @@ import io.github.nolanbarry.aoc2024.util.Input
 
 fun main() {
     val lookingFor = setOf("MSAMS", "MMASS", "SMASM", "SSAMM")
-    val matrix = Input.get("day4/input")
-        .split("\n")
-        .map { it.split("") }
+    val matrix = Input.matrixOfChars("day4/input")
     var count = 0
     matrix.forEachIndexed { y, row ->
         row.forEachIndexed { x, _ ->

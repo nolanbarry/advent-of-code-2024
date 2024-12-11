@@ -1,7 +1,6 @@
 package io.github.nolanbarry.aoc2024.day1
 
 import io.github.nolanbarry.aoc2024.util.Input
-import kotlin.math.absoluteValue
 
 fun main() {
     val (listA, listB) = Input.get("day1/input").lines()

@@ -1,12 +1,6 @@
 package io.github.nolanbarry.aoc2024.day7
 
 import io.github.nolanbarry.aoc2024.util.Input
-import kotlin.math.PI
-import kotlin.math.atan2
-import kotlin.math.cos
-import kotlin.math.pow
-import kotlin.math.roundToInt
-import kotlin.math.sin
 
 fun main() {
     val operators = listOf<(Long, Long) -> Long>(

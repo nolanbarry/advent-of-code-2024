@@ -12,14 +12,6 @@ import kotlin.collections.reduceIndexed
 import kotlin.collections.sumOf
 import kotlin.io.println
 import kotlin.let
-import kotlin.math.PI
-import kotlin.math.atan2
-import kotlin.math.ceil
-import kotlin.math.cos
-import kotlin.math.log10
-import kotlin.math.pow
-import kotlin.math.roundToInt
-import kotlin.math.sin
 import kotlin.ranges.until
 import kotlin.repeat
 import kotlin.text.lines
