@@ -12,3 +12,5 @@ fun Pair<Int, Int>.rotate90(): Pair<Int, Int> {
     val newDirectionRadians = (atan2(first.toDouble(), second.toDouble()) + PI / 2)
     return sin(newDirectionRadians).roundToInt() to cos(newDirectionRadians).roundToInt()
 }
+
+fun Pair<Int, Int>.rotateNeg90(): Pair<Int, Int> = rotate90().rotate90().rotate90()
