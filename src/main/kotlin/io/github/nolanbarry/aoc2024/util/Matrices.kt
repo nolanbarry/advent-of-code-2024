@@ -35,6 +35,9 @@ fun <T, M> List<List<T>>.mapMatrixIndexed(block: (Int, Int, T) -> M): List<List<
 fun <T> matrixOf(rows: Int, columns: Int, fill: (Int, Int) -> T) =
     (0..<rows).map { row -> (0..<columns).map { col -> fill(row, col) } }
 
+fun <T> mutableMatrixOf(rows: Int, columns: Int, fill: (Int, Int) -> T) =
+    (0..<rows).map { row -> (0..<columns).map { col -> fill(row, col) }.toMutableList() }
+
 fun List<List<*>>.print() = println(joinToString("\n") { it.joinToString("") })
 fun Set<Pair<Int, Int>>.print() {
     val rowOffset = minOf { it.first }

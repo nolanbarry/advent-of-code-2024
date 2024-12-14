@@ -15,6 +15,11 @@ kotlin {
     jvmToolchain(19)
 }
 
+dependencies {
+    implementation("org.jetbrains.kotlinx:multik-core:0.2.3")
+    implementation("org.jetbrains.kotlinx:multik-default:0.2.3")
+}
+
 tasks {
     task<JavaExec>("day1") {
         dependsOn("build")
