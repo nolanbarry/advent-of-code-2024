@@ -50,3 +50,4 @@ fun Set<Pair<Int, Int>>.print() {
 }
 
 typealias CoordinatePair = Pair<Int, Int>
+typealias LongCoordinatePair = Pair<Long, Long>
